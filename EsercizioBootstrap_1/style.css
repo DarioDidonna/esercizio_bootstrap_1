@@ -1,0 +1,337 @@
+.navbar-cinema {
+    background-color: #121212;
+    border-bottom: 1px solid #d4af37;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-family: 'Georgia', serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.brand-first {
+    color: #ffc107;
+    font-weight: 900;
+}
+
+.brand-second {
+    color: #ffffff;
+    font-weight: 300;
+    margin-left: 2px;
+}
+
+.navbar-cinema .nav-link {
+    color: #e0e0e0 !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar-cinema .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffc107;
+    transition: width 0.3s ease;
+}
+
+.navbar-cinema .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-cinema .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.search-container {
+    border: 1px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-input {
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+    font-size: 0.9rem;
+}
+
+.search-input::placeholder {
+    color: #666;
+}
+
+.btn-gold {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: 700;
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #e5ac00;
+    color: #000;
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=2070') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    margin-top: -76px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.9));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero-title {
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.gold-text {
+    color: #ffc107;
+    text-shadow: 0 0 20px rgba(255, 193, 7, 0.4);
+}
+
+.hero-subtitle {
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: #d1d1d1;
+}
+
+.btn-gold {
+    background-color: #ffc107;
+    border: 2px solid #ffc107;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #e5ac00;
+    transform: scale(1.05);
+}
+
+.btn-outline-gold {
+    border: 2px solid #ffc107;
+    color: #ffc107;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-outline-gold:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.movie-section {
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.section-title {
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.movie-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+    border-color: #ffc107;
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2);
+}
+
+.movie-card .card-img-top {
+    height: 400px;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.movie-card:hover .card-img-top {
+    filter: grayscale(0%);
+}
+
+.movie-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.movie-card .card-text {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.btn-outline-gold {
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 0;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.gold-text {
+    color: #ffc107;
+}
+
+.work-with-us {
+    background-color: #0b0b0b;
+    padding-bottom: 100px;
+}
+
+.form-container {
+    background-color: #1a1a1a;
+    padding: 3rem;
+    border: 1px solid #333;
+    border-top: 4px solid #ffc107;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.custom-input {
+    background-color: #252525 !important;
+    border: 1px solid #444 !important;
+    color: white !important;
+    border-radius: 0;
+    padding: 12px;
+}
+
+.custom-input:focus {
+    border-color: #ffc107 !important;
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.3) !important;
+    background-color: #2a2a2a !important;
+}
+
+.custom-input::placeholder {
+    color: #666;
+}
+
+
+.btn-gold-lg {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-gold-lg:hover {
+    background-color: #e5ac00;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-cinema {
+    background-color: #080808;
+    border-top: 1px solid #333;
+    color: white;
+}
+
+.gold-text {
+    color: #ffc107;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.owner-info {
+    font-size: 0.85rem;
+    color: #d1d1d1;
+}
+
+.social-icons .social-link {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons .social-link:hover {
+    color: #ffc107;
+    transform: translateY(-5px);
+}
+
+.hr-gold {
+    background-color: #ffc107;
+    opacity: 0.2;
+    height: 1px;
+    border: none;
+}
+
+.x-small {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.movie-card a {
+    display: block;
+    overflow: hidden;
+}
+
+.movie-card img {
+    transition: transform 0.5s ease;
+}
+
+.movie-card img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
